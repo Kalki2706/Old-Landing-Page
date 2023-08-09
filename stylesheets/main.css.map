@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;ACCF;;ADEA;EACE,SAAA;EACA,mBAAA;ACCF","file":"main.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  background: #d2dde3;\n}\n","* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  background: #d2dde3;\n}"]}
