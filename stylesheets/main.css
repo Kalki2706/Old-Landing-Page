@@ -5,4 +5,12 @@
 body {
   margin: 0;
   background: #d2dde3;
+}
+
+svg {
+  width: 40px;
+}
+
+img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
