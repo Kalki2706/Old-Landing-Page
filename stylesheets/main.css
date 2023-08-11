@@ -1,16 +1,156 @@
 * {
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 body {
   margin: 0;
   background: #d2dde3;
+  font-family: "Montserrat";
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+.header .logo {
+  background: #000;
+  color: #fff;
+  padding: 0em 1em;
+}
+.header .logo h3 {
+  text-align: center;
+}
+.header .logo h3 .logo-span {
+  font-weight: 400;
+}
+.header nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(2px) brightness(50%);
+          backdrop-filter: blur(2px) brightness(50%);
+  width: 50%;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  font-weight: 600;
+}
+.header nav .close {
+  float: right;
+  margin: 0.6em 0.5em;
+  fill: #000;
+  cursor: pointer;
+  width: 45px;
+}
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+.header nav ul a {
+  color: #fff;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.18s;
+}
+.header nav ul a:hover {
+  background: #000;
+}
+
+.menu {
+  width: 55px;
+  padding-right: 0.5em;
 }
 
 svg {
   width: 40px;
 }
 
-img {
+.main {
+  padding: 0 0.5em;
+}
+.main .hero-img {
+  animation: introLoad 2s forwards;
+  padding-top: 4em;
+}
+.main .hero-img img {
   width: 100%;
+  max-width: 700px;
+}
+.main .hero-txt {
+  padding: 0 0.5em;
+  margin-bottom: 3em;
+}
+.main .hero-txt h1 {
+  font-size: 5rem;
+  font-family: "Antonio";
+  color: #fe2857;
+  margin: 0;
+}
+.main .hero-txt h1 .hero-span {
+  font-size: 3.5rem;
+}
+.main .hero-txt p {
+  margin: 0.5em 0 2.5em;
+  font-size: 18px;
+}
+.main .hero-txt .cta {
+  display: block;
+  margin: 0 0 0 auto;
+  padding: 1em 2em;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.1em;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.18s ease-in-out;
+}
+.main .hero-txt .cta:hover {
+  background: #f9cb15;
+  color: #000;
+}
+
+.footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.footer nav {
+  background: #000;
+}
+.footer nav ul {
+  list-style-type: none;
+  padding: 0.8em;
+  margin: 0;
+}
+.footer nav ul li {
+  padding: 0.5em 0;
+}
+.footer nav ul li svg {
+  width: 30px;
+}
+.footer nav ul li .fb-svg:hover {
+  stroke: transparent;
+  fill: #4267b2;
+}
+.footer nav ul li .tweet-svg g:hover {
+  fill: #00acee;
+}
+.footer nav ul li .ig-svg:hover {
+  stroke: #e1306c;
+}
+.footer .arrow-link {
+  align-self: flex-end;
+  background-color: #000;
+  padding: 0.2em 0.5em 0em;
+}
+.footer .arrow-link svg {
+  width: 2.8125rem;
 }/*# sourceMappingURL=main.css.map */
