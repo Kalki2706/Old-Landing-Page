@@ -7,6 +7,8 @@ body {
   margin: 0;
   background: #d2dde3;
   font-family: 'Montserrat';
+  // max-height: 100vh;
+  // scroll-behavior: smooth;
 }
 
 // HEADER STYLING
@@ -84,6 +86,7 @@ svg {
 // main style
 .main {
   padding: 0 0.5em;
+
   .hero-img {
     animation: introLoad 2s forwards;
     padding-top: 4em;
@@ -111,12 +114,12 @@ svg {
 
     p {
       margin: 0.5em 0 2.5em;
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     .cta {
       display: block;
-      margin: 0 0 0 auto;
+      margin-left: auto;
       padding: 1em 2em;
       background: #000;
       color: #fff;
