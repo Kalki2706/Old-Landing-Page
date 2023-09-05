@@ -1,0 +1,72 @@
+@media only screen and (min-width: 768px) {
+  .header {
+    .logo {
+      padding: 0 4em;
+    }
+
+    nav {
+      position: absolute;
+      transform: translateX(0%);
+      backdrop-filter: blur(0) brightness(100%);
+
+      .close {
+        display: none;
+      }
+
+      ul {
+        margin: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-top: 0.4em;
+        gap: 1.5em;
+
+        li:last-child {
+          margin-right: 1.5em;
+        }
+
+        a {
+          color: #000;
+          text-decoration: none;
+          transition: all 0.2s;
+
+          &:hover {
+            color: #fe2857;
+            text-decoration: underline;
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  .main {
+    .hero-img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-txt {
+      padding-left: 3em;
+
+      h1 {
+        font-size: 8rem;
+
+        .hero-span {
+          font-size: 6.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.3438rem;
+      }
+
+      .cta {
+      }
+    }
+  }
+}
